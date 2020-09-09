@@ -13111,4 +13111,4 @@ const foldTo = distance =>
   distance < 0 ? null : Math.max(Math.ceil(Math.log2(distance / 0.0001)), 0);
 ```
 
-#### A Strange Trip to the Market (8kyu)
+# A Strange Trip to the Market (8kyu)
