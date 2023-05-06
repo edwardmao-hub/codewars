@@ -12336,3 +12336,34 @@ seven(477557101) should return [28, 7]
 ```
 
 My ans:
+```js
+function seven(m) {
+  const str = m.toString()
+  let val = -1
+  let count = 0
+  // x − 2y
+  //m = 371 -> 37 − (2×1) -> 37 − 2 = 35
+
+//   while(str.length > 2){
+//     let front = +str.slice(0, str.length - 2)
+//     let back = +str.slice(str.length - 1)
+//     val = front
+//     if((front - back*2) % 7 === 0){
+//       break
+//     }
+//   }
+  
+  for(let i = str.length - 1; i > 1; i--){
+    let front = +str.slice(0, i)
+    let back = +str.slice(i)
+    val = front
+    count++
+    if((front - back*2) % 7 === 0){break}
+      
+  }
+  
+  return [val, count]
+}
+
+//102, 1 -> 102 - (1*2) = 100, 10 - (0*2) = 1 
+```
