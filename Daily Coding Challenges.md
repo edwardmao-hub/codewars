@@ -10607,3 +10607,14 @@ uefaEuro2016(['Germany', 'Ukraine'],[2, 0]) // "At match Germany - Ukraine, Germ
 uefaEuro2016(['Belgium', 'Italy'],[0, 2]) // "At match Belgium - Italy, Italy won!"
 uefaEuro2016(['Portugal', 'Iceland'],[1, 1]) // "At match Portugal - Iceland, teams played draw."
 ```
+
+Ans: 
+```js
+function uefaEuro2016(teams, scores){
+  const str = `At match ${teams[0]} - ${teams[1]},`
+  const idx = scores[0] > scores[1] ? 0 : 1
+  return scores[0] !== scores[1] 
+            ? str+` ${teams[idx]} won!`
+            : str+` teams played draw.`
+}
+```
