@@ -10618,3 +10618,5 @@ function uefaEuro2016(teams, scores){
             : str+` teams played draw.`
 }
 ```
+
+# Beginner - Reduce but Grow (8kyu)
