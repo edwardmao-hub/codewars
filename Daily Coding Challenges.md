@@ -10620,3 +10620,37 @@ function uefaEuro2016(teams, scores){
 ```
 
 # Beginner - Reduce but Grow (8kyu)
+Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
+
+```
+[1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+```
+
+Answer:
+```js
+function grow(x){
+  return x.reduce((total, n) => total * n)
+}
+```
+
+# Training JS #12: loop statement --for..in and for..of (8kyu)
+The function `giveMeFive` accepts 1 parameter, `obj`, which is an object.
+
+Create an array (which you will eventually return). Then, traverse `obj`, checking each key and value. If the length of the **key** is equal to 5, then push the **key** to your array. Separately, if the length of the **value** is equal to 5, then push the **value** to your array.
+
+At the end, return your array.
+
+You should use `for..in` in your code, otherwise your solution may not pass this kata.
+
+Ans:
+```js
+function giveMeFive(obj){
+  const arr = []
+  for(let key in obj){
+    if(key.length === 5){ arr.push(key) }
+    if(obj[key].length === 5){ arr.push(obj[key]) }
+  }
+  
+  return arr
+}
+```
