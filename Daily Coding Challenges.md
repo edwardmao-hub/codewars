@@ -10654,3 +10654,9 @@ function giveMeFive(obj){
   return arr
 }
 ```
+
+One liner:
+```js
+const giveMeFive = obj =>
+  [].concat(...Object.entries(obj, `for( in `)).filter(val => val.length === 5);
+```
