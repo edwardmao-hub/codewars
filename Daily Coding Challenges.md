@@ -10678,3 +10678,11 @@ function dutyFree(normPrice, discount, hol){
   return Math.floor(hol / (normPrice * discount/100))
 }
 ```
+
+# Type of sum (8kyu)
+Return the type of the sum of the two arguments
+
+Ans:
+```js
+const typeOfSum = (a, b) => typeof(a+b)
+```
