@@ -10717,5 +10717,50 @@ Ex:
 
 My answer:
 ```js
+function dashatize(num) {
+  const arr = Math.abs(num).toString().split('')
+  const addDashes = arr.map((c,i) => {
+    if(+c % 2 === 0 || i===0 && i=== arr.length-1){ 
+      return c
+    }else{
+        if(i===arr.length-1 && arr[i-1] % 2 !== 0){ return c }
+        else if(i===0 || (i > 0 && arr[i-1] % 2 !== 0 && !(i===arr.length-1))){ return `${c}-`}
+        else if(i===arr.length-1 && (i > 0 && arr[i-1] % 2 !==0 )) { return `-${c}`}
+        else { return i === arr.length - 1 ? `-${c}` : `-${c}-`}
+    }
+
+  })
+  return addDashes.join('')
+}
+
+//turn num into str
+//split each char up
+//for loop, if num(char) is odd, add dash before/after
+//join array
+```
+
+Better answer:
+```js
+function dashatize(num) {
+  const digits = Math.abs(num).toString().split('');
+  let result = '';
+
+  for (let i = 0; i < digits.length; i++) {
+    const cur = +digits[i];
+    const prev = +digits[i - 1];
+
+    if (i > 0 && cur % 2 && prev % 2 === 0) {
+      result += '-';
+    }
+
+    result += digits[i];
+
+    if (cur % 2 && i < digits.length - 1) {
+      result += '-';
+    }
+  }
+
+  return result.replace(/-$/, '');
+}
 
 ```
