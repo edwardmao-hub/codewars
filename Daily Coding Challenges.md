@@ -10831,3 +10831,16 @@ With the above data your function `gps(s, x)` should return `74`
 With floats it can happen that results depends on the operations order. To calculate hourly speed you can use:
 
 `(3600 * delta_distance) / s`.
+
+My answer:
+```js
+function gps(s, x) {
+  const speedPerHour = (s / 3600)
+  let fastest = 1
+  for(let i = 1; i < x.length; i++){
+    fastest = Math.max( fastest, ((x[i] - x[i-1]) / speedPerHour) )
+  }
+  
+  return fastest === 1 ? 0 : Math.floor(fastest)
+}
+```
