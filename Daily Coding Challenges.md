@@ -10862,3 +10862,18 @@ websites.push("codewars")
 
 # Parse float (8kyu)
 Write function `parseF` which takes an input and returns a number or null if conversion is not possible. The input can be one of many different types so be aware.
+
+Answer
+```js
+function parseF(s) {
+  const n = parseFloat(s)
+  return Number.isNaN(n) ? null : n
+}
+```
+
+Better answer:
+```js
+function parseF(s) {
+  return isNaN(parseFloat(s)) ? null : parseFloat(s);
+}
+```
