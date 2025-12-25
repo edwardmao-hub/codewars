@@ -10877,3 +10877,5 @@ function parseF(s) {
   return isNaN(parseFloat(s)) ? null : parseFloat(s);
 }
 ```
+
+# Geometry Basics: Distance between points in 2D (8kyu)
