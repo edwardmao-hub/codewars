@@ -10908,5 +10908,21 @@ Complete the method/function so that it converts dash/underscore delimited words
 
 My answer:
 ```js
-
+function toCamelCase(str){
+  let camelCase = str.slice(0, 1)
+  let prevDash = false
+  
+  for(let i = 1; i < str.length; i++){
+    if(prevDash === true){
+      camelCase += str[i].toUpperCase()
+      prevDash = false
+    }else if(str[i] === "_" || str[i] === "-"){
+      prevDash = true
+    }else{
+      camelCase += str[i]
+    }
+  }
+  
+  return camelCase
+}
 ```
