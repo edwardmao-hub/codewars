@@ -10926,3 +10926,5 @@ function toCamelCase(str){
   return camelCase
 }
 ```
+
+# Grasshopper - Terminal Game #1 (8kyu)
