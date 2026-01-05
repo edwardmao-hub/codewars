@@ -11016,3 +11016,13 @@ Your task is to write a function that takes two parameters: the year of birth an
 Provide output in this format: For dates in the future: "You are ... year(s) old." For dates in the past: "You will be born in ... year(s)." If the year of birth equals the year requested return: "You were born this very year!"
 
 "..." are to be replaced by the number, followed and proceeded by a single space. Mind that you need to account for both "year" and "years", depending on the result.
+
+```js
+function calculateAge(current, future) {  
+  const age = future - current
+  const year = Math.abs(age) === 1 ? "year" : "years"
+  return age > 0 ? `You are ${age} ${year} old.`
+        : age === 0 ? `You were born this very year!`
+        : `You will be born in ${age*-1} ${year}.`
+}
+```
