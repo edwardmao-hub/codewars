@@ -11035,3 +11035,8 @@ Two red beads are placed between every two blue beads. There are N blue beads. A
 Implement a function returning the number of red beads.  
 If there are less than 2 blue beads return 0.
 
+```js
+function countRedBeads(n) {
+  return n < 2 ? 0 : (2 + (n-2)*2)
+}
+```
