@@ -11073,5 +11073,13 @@ output: "e6t-r3s are r4y fun!"
 
 My ans:
 ```js
+//define currentWord - used to store chars
+//define abbrevStr - used to store full words
+//loop over str, going char by char
+//if(letter), add to currentWord
+//if(!letter), abbrev currentWord if possible, slice(first letter, length-2, last letter)
+// + add currentWord && nonletter char to abbrevSr, and set currentWord to "" 
+
+//return abbrevStr
 
 ```
