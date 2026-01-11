@@ -11073,6 +11073,29 @@ output: "e6t-r3s are r4y fun!"
 
 My ans:
 ```js
+function abbreviate(string) {
+  let abbrevStr = "", currWord = ""
+  const addWord = () => {
+    if(currWord.length===0) return
+    abbrevStr += currWord.length < 4 
+      ? currWord
+      : currWord[0] + (currWord.length - 2) + currWord[currWord.length - 1]
+    currWord = ""
+  }
+  
+  for(let i = 0; i < string.length; i++){
+    let ch = string[i]
+    if(ch.toLowerCase() === ch.toUpperCase()){
+      addWord()
+      abbrevStr += ch
+    }else{
+      currWord += ch
+    }
+  }
+  
+  addWord()
+  return abbrevStr
+}
 //define currentWord - used to store chars
 //define abbrevStr - used to store full words
 //loop over str, going char by char
