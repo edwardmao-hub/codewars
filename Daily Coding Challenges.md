@@ -11104,5 +11104,10 @@ function abbreviate(string) {
 // + add currentWord && nonletter char to abbrevSr, and set currentWord to "" 
 
 //return abbrevStr
+```
 
+Better:
+```js
+const abbreviate = str =>
+  str.replace(/(?<=[a-z])[a-z]{2,}(?=[a-z])/gi, ({length}) => length);
 ```
