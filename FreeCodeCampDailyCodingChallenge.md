@@ -19,21 +19,18 @@ function isCircularPrime(n) {
     })
 
   
-  for(let i=0;i<arr.length;i++){
-    if(!isPrime(arr[i])) return false
+  for(let num of rotated){
+    if(!isPrime(num)) return false
   }
   
   return true;
 }
 
   
-
 function isPrime(n){
-  if(n < 1) return false
-  if(n===2) return true
-  if(n%2===0 && n < 2) return false
+  if(n <= 2) return false
+  if(n%2===0) return false
   const limit = Math.floor(Math.sqrt(n))
-  // console.log(limit)
   for(let i = 3; i<limit;i+2){
     if(n % i === 0) return false
   }
