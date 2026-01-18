@@ -11130,5 +11130,5 @@ isPowerOfTwo(333)  // -> false
 Beware of certain edge cases - for example, `1` is a power of `2` since `2^0 = 1` and `0` is not a power of `2`.
 
 My answer:
-```
+```js
 ```
