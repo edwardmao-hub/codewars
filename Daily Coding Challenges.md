@@ -11131,4 +11131,8 @@ Beware of certain edge cases - for example, `1` is a power of `2` since `2^0 = 1
 
 My answer:
 ```js
+function isPowerOfTwo(n){
+  if(n=== 0) return false
+  return (n & (n - 1)) === 0
+}
 ```
