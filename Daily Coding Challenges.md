@@ -2402,7 +2402,7 @@ eight(dividedBy(three()));
 ```
 
 Answer:
-```
+```js
 const zero = a => a ? a(0) : 0
 const one = a => a ? a(1) : 1
 const two = a => a ? a(2) : 2
@@ -2437,7 +2437,7 @@ seven(times(five())); // must return 35
 
 
  Using a generator to get rid of all the duplicate functions. (And with readable variable names):
- ```
+```js
 const zero = a => a ? a(0) : 0
 const one = a => a ? a(1) : 1
 const two = a => a ? a(2) : 2
@@ -2475,6 +2475,7 @@ So, when you access an element like `zero`, it’s actually a function that will
 For example:```
 zero()  // Returns 0
 zero(x => x + 5)  // Returns 5 (because 0 + 5 = 5)```
+
 
 # Build Tower (6kyu)
 Build a pyramid-shaped tower, as an array/list of strings, given a positive integer `number of floors`. A tower block is represented with `"*"` character.
@@ -11136,6 +11137,3 @@ function isPowerOfTwo(n){
   return (n & (n - 1)) === 0
 }
 ```
-
-
-a
