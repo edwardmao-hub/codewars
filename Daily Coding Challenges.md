@@ -11137,3 +11137,10 @@ function isPowerOfTwo(n){
   return (n & (n - 1)) === 0
 }
 ```
+
+Better: 
+```js
+function isPowerOfTwo(n){
+    return Number.isInteger(Math.log2(n)); 
+}
+```
