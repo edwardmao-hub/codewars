@@ -11246,8 +11246,26 @@ When you have finished the work, click "Run Tests" to see if your code is workin
 In the end, click "Submit" to submit your code pass this kata.
 
 My ans:
-```
+```js
 function trueOrFalse(val){
   return val ? "true" : "false"
+}
+```
+
+# Training JS #10: loop statement --for (8kyu)
+### Task
+
+The function `pickIt` accepts 1 parameter, `arr`, which is an array of numbers. We need to traverse `arr` by using a `for` loop. If an element is an odd number, push it to the `odd` array, and if it's an even number, push it to the `even`array.
+
+I've defined two arrays `odd` and `even` in the function, and also wrote the return statement. **Your work is to write a `for` loop.**
+
+My answer:
+```js
+function pickIt(arr){
+  let odd = [], even = [];
+  for(let i = 0; i < arr.length; i++){
+    arr[i] % 2 === 0 ? even.push(arr[i]) : odd.push(arr[i])
+  }
+  return [odd,even];
 }
 ```
