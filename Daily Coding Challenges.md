@@ -11369,3 +11369,5 @@ printer_error(s) => "8/22"
 ```
 
 My ans:
+```js
+```
