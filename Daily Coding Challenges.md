@@ -11370,4 +11370,12 @@ printer_error(s) => "8/22"
 
 My ans:
 ```js
+function printerError(s) {
+  const err = s.split('').reduce((total, c) => {
+    if(c.charCodeAt(0) > 109) total += 1
+    return total
+  }, 0)
+  
+  return `${err}/${s.length}`
+}
 ```
