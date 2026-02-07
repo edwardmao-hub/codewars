@@ -11428,3 +11428,21 @@ Write a function that converts any sentence into a V A P O R W A V E sentence. a
 "Lets go to the movies"       -->  "L  E  T  S  G  O  T  O  T  H  E  M  O  V  I  E  S"
 "Why isn't my code working?"  -->  "W  H  Y  I  S  N  '  T  M  Y  C  O  D  E  W  O  R  K  I  N  G  ?"
 ```
+
+My answer:
+```js
+function vaporcode(string) {
+  return string.split('').reduce( (str, c) => {
+    if(c===" "){return str}
+    return str ? str + "  " + c.toUpperCase() : c.toUpperCase()
+  }, "")
+}
+
+```
+
+Another ans:
+```js
+function vaporcode(string) {
+  return string.toUpperCase().split(" ").join("").split("").join("  ");
+}
+```
