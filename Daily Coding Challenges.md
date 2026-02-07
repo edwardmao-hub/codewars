@@ -11416,3 +11416,5 @@ function aliasGen(first, last){
   return `${firstName[one.toUpperCase()]} ${surname[two.toUpperCase()]}`
 }
 ```
+
+#### V A P O R C O D E (7kyu)
