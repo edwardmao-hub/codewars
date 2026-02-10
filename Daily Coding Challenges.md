@@ -11446,7 +11446,19 @@ function vaporcode(string) {
   return string.toUpperCase().split(" ").join("").split("").join("  ");
 }
 ```
-# Area of a Square (8kyu)
-Complete the function that calculates the area of the red square, when the length of the circular arc `A` is given as the input. Return the result rounded to two decimals.
+# Simple remove duplicates (7kyu)
+Remove the duplicates from a list of integers, keeping the last ( rightmost ) occurrence of each element.
 
-Note: use the π value provided in your language (`Math::PI`, `M_PI`, `math.pi`, etc)
+### Example:
+
+For input: `[3, 4, 4, 3, 6, 3]`
+
+- remove the `3` at index `0`
+- remove the `4` at index `1`
+- remove the `3` at index `3`
+
+Expected output: `[4, 6, 3]`
+
+More examples can be found in the test cases.
+
+Good luck!
