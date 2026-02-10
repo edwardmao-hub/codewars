@@ -11446,3 +11446,4 @@ function vaporcode(string) {
   return string.toUpperCase().split(" ").join("").split("").join("  ");
 }
 ```
+# Area of a Square (8kyu)
