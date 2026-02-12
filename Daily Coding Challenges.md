@@ -11479,3 +11479,10 @@ function solve(arr) {
   return result.reverse();
 }
 ```
+
+Ans:
+```js
+function solve(arr){
+    return arr.filter((val,i) => arr.lastIndexOf(val) == i);
+}
+```
