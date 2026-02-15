@@ -11499,3 +11499,18 @@ Some examples:
 ([1,2,3,4,5], "index") should return 0
 ```
 
+My ans:
+```js
+function min(arr, toReturn) {
+  const least = Math.min(...arr)
+  return toReturn === "value" ? least : arr.findIndex((e) => e === least)
+}
+```
+
+Ans:
+```js
+function min(arr, toReturn) {
+  var val = Math.min.apply(null, arr)
+  return toReturn == 'value' ? val : arr.indexOf(val)
+}
+```
