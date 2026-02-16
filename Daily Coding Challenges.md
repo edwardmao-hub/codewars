@@ -11514,3 +11514,8 @@ function min(arr, toReturn) {
   return toReturn == 'value' ? val : arr.indexOf(val)
 }
 ```
+
+Ans:
+```js
+const min = (arr, toReturn) => toReturn === 'value' ? Math.min(...arr) : arr.indexOf(Math.min(...arr));
+```
