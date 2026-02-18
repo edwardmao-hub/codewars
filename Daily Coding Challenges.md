@@ -11581,3 +11581,5 @@ class Ship {
   
 }
 ```
+
+# Char Code Calculation (7kyu)
