@@ -11618,3 +11618,20 @@ function calc(x){
           total2.reduce((total, n) => total+=n,0)
 }
 ```
+
+
+Better ans:
+```js
+function calc(x) {
+  const total1 = x
+    .split('')
+    .map(c => c.charCodeAt(0))
+    .join('');
+
+  const count7 = total1.split('').filter(c => c === '7').length;
+
+  return count7 * 6;
+}
+```
+- Each `'7' → '1'` reduces the digit sum by **6** 
+- So instead of recomputing everything: Just count how many `'7'`s there are and then Multiply by `6`
