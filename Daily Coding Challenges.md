@@ -11606,3 +11606,15 @@ Then return the difference between the sum of the digits in `total1` and `total2
 -------------------------
                        6
 ```
+
+```js
+function calc(x){
+  let total1 = x.split('').reduce((str, c) => str+=(c.charCodeAt(0)).toString(), "")
+  let total2 = total1.replaceAll('7', '1')
+  total1 = total1.split('').map(n => +n)
+  total2 = total2.split('').map(n => +n)
+  
+  return total1.reduce((total, n) => total+=n,0) - 
+          total2.reduce((total, n) => total+=n,0)
+}
+```
