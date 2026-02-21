@@ -11635,3 +11635,5 @@ function calc(x) {
 ```
 - Each `'7' → '1'` reduces the digit sum by **6** 
 - So instead of recomputing everything: Just count how many `'7'`s there are and then Multiply by `6`
+
+# Kebabize (6kyu)
