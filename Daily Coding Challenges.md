@@ -11648,3 +11648,26 @@ Modify the `kebabize` function so that it converts a camel case string into a ke
 Notes:
 
 - the returned string should only contain lowercase letters
+
+My ans:
+```js
+function kebabize(str) {
+  const kebab = []
+  let arr = str.split('')
+  for(let i = 0; i < arr.length; i++){
+    const c = arr[i]
+    if(i===0){
+      kebab.push(c.toLowerCase())
+    }else if(c.toLowerCase() === c.toUpperCase()){
+      continue
+    }else if(c === c.toUpperCase()){
+      kebab.push("-")
+      kebab.push(c.toLowerCase())
+    }else{
+      kebab.push(c)
+    }
+  }
+
+  return kebab.join('')
+}
+```
