@@ -11671,3 +11671,5 @@ function kebabize(str) {
   return kebab.join('')
 }
 ```
+
+# Functional Addition (7kyu)
