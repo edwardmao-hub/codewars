@@ -11693,3 +11693,5 @@ function add(n) {
   }
 }
 ```
+
+# Grasshopper - Create the rooms (8kyu)
