@@ -11713,3 +11713,5 @@ var rooms = {
   bathroom : new Room(),
 }
 ```
+
+# Digits explosion (7kyu)
