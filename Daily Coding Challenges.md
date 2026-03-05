@@ -11727,3 +11727,9 @@ Given a string made of digits `[0-9]`, return a string where each digit is repea
 "102269" should return "12222666666999999999"
 ```
 
+My ans:
+```js
+function explode(s) {
+  return s.split('').map(c => c.repeat(+c)).join('')
+}
+```
