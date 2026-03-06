@@ -11743,3 +11743,5 @@ function orderOperations () {
   return (2 + 2) * (2 + 2) * 2
 }
 ```
+
+# Reverse every other word in the string (6kyu)
