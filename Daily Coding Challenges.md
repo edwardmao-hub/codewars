@@ -11748,3 +11748,16 @@ function orderOperations () {
 Reverse every other word in a given string, then return the string. Throw away any leading or trailing whitespace, while ensuring there is exactly one space between each word. Punctuation marks should be treated as if they are a part of the word in this kata.
 
 My ans:
+```js
+function reverse(str){
+  return str.trim().split(' ').map((word, i) => {
+    return i%2!==0 ? word.split('').reverse().join('') : word
+  }).join(' ')
+}
+
+//"Reverse this string, please!" -> "Reverse siht string, !esaelp"
+//0)trim whitespace with trim()
+//1)split str into arr based on spaces
+//2)if idx is odd, reverse, else just add word
+//3)join with spaces and return
+```
