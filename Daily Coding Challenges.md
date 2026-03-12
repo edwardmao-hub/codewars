@@ -11782,3 +11782,8 @@ cycleLength - Integer representing the length of the cycle in days
 Return true if the number of days passed from last to today is greater than cycleLength. Otherwise, return false.
 
 My ans: 
+```js
+function periodIsLate(last, today, cycleLength) {
+  return (today.valueOf() - last.valueOf()) / (1000 * 3600 * 24) > cycleLength
+}
+```
