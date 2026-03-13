@@ -11780,3 +11780,5 @@ today - The Date object with the date of the check
 cycleLength - Integer representing the length of the cycle in days
 
 Return true if the number of days passed from last to today is greater than cycleLength. Otherwise, return false.
+
+My ans: 
