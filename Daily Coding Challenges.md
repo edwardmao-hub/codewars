@@ -11787,3 +11787,5 @@ function periodIsLate(last, today, cycleLength) {
   return (today.valueOf() - last.valueOf()) / (1000 * 3600 * 24) > cycleLength
 }
 ```
+
+# Ensure question (8kyu)
