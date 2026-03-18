@@ -11812,3 +11812,19 @@ Our fruit guy has a bag of fruit (represented as an array of strings) where some
 - If the array is null/nil/None or empty you should return empty array (`[]`).
 - The rotten fruit name will be in this camelcase (`rottenFruit`).
 - The returned array should be in lowercase.
+
+My ans:
+```js
+function removeRotten(bagOfFruits){
+  if(!bagOfFruits || bagOfFruits.length === 0) return []
+
+  return bagOfFruits.map(fruit => {
+    if(fruit.includes('rotten')){
+      return fruit[6].toLowerCase() + fruit.slice(7)
+    }else{
+      return fruit
+    }
+  })
+
+}
+```
