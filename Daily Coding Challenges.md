@@ -11889,3 +11889,7 @@ The function `chooseBestSum` (or `choose_best_sum` or ... depending on the langu
 
 - try not to modify the input list of distances `ls`
 - in some languages this "list" is in fact a _string_ (see the Sample Tests).
+
+My ans:
+```js
+```
