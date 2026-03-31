@@ -11899,14 +11899,14 @@ function equal3(){
 }
 
 function equal4(){
-  let a =  100, //set number value to a
-      b =  1; //set number value to b
+  let a =  v4, //set number value to a
+      b =  v5; //set number value to b
   return a / b;
 }
 
 function equal5(){
-  let a =  100, //set number value to a
-      b =  101; //set number value to b
+  let a =  v2, //set number value to a
+      b =  v6; //set number value to b
   return a % b;
 }
 ```
