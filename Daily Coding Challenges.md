@@ -11941,5 +11941,35 @@ The function `chooseBestSum` (or `choose_best_sum` or ... depending on the langu
 
 My ans:
 ```js
+function chooseBestSum(t, k, ls) {
+  let best = 0
+  
+  function backtrack(start, current, depth) {
+      if (depth === k) {
+          const sum = current.reduce((a, b) => a + b, 0);
+          if (sum <= t && sum > best) {
+              best = sum;
+          }
+          return;
+      }
 
+      for (let i = start; i < ls.length; i++) {
+          backtrack(i + 1, [...current, ls[i]], depth + 1);
+      }
+    }
+    
+    backtrack(0, [], 0);
+
+  return best === 0 ? null : best
+}
+
+//ls = list of towns
+//k = number of towns
+//t = max miles
 ```
+
+# Divide and Conquer (7kyu)
+Given a mixed array of number and string representations of integers, add up the non-string integers and subtract the total of the string integers.
+
+Return as a number.
+
