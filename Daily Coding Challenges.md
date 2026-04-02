@@ -11973,3 +11973,9 @@ Given a mixed array of number and string representations of integers, add up the
 
 Return as a number.
 
+My ans:
+```js
+function divCon(x){
+  return x.reduce((total, n) => n === +n ? total+= n : total -= +n ,0)
+}
+```
