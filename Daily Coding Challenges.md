@@ -11994,3 +11994,7 @@ For an undefined slope (division by 0), return `undefined` . Note that the "unde
 ```
 
 Assume that `[a,b,c,d]` and the slope are all integers (no floating numbers!).
+
+My ans:
+```js
+```
