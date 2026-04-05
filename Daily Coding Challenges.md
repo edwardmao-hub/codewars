@@ -12003,3 +12003,8 @@ function slope(points){
   return denominator === 0 ? "undefined" : (numerator / denominator).toString()
 }
 ```
+
+Better ans:
+```js
+
+```
