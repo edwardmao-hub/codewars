@@ -12027,3 +12027,13 @@ You are given 5 variables;
     
 
 If you make it, return "Alive!", if not, return "Shark Bait!".
+
+My ans:
+```js
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+  return pontoonDistance*sharkSpeed*(1-0.5*dolphin) 
+  < sharkDistance*youSpeed ? "Alive!" : "Shark Bait!"
+}
+```
+
+# 
