@@ -12058,3 +12058,9 @@ No input validation is needed, as both arrays are guaranteed to contain zero or 
 * [1, 3, 5, 7, 9, 11, 12], [1, 2, 3, 4, 5, 10, 12] -> [1, 2, 3, 4, 5, 7, 9, 10, 11, 12]
 ```
 
+My ans:
+```js
+function mergeArrays(arr1, arr2) {
+  return [...new Set(arr1.concat(arr2).sort((a, b) => a - b))]
+}
+```
