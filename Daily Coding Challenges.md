@@ -12065,4 +12065,4 @@ function mergeArrays(arr1, arr2) {
 }
 ```
 
-# 
+# Filter the number (7kyu)
