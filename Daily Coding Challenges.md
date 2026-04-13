@@ -12073,3 +12073,9 @@ Your task is to return a number from a string.
 
 You will be given a string of numbers and letters mixed up, you have to return all the numbers in that string in the order they occur.
 
+My ans:
+```js
+function filterString(value) {
+
+}
+```
