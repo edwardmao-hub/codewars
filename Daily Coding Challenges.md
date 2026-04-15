@@ -12076,6 +12076,6 @@ You will be given a string of numbers and letters mixed up, you have to return a
 My ans:
 ```js
 function filterString(value) {
-
+  return +value.split('').filter(n => { if(+n == n){return n} }).join('')
 }
 ```
