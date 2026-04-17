@@ -12080,4 +12080,4 @@ function filterString(value) {
 }
 ```
 
-# 
+# Digital cypher (7kyu)
