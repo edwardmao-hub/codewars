@@ -12097,5 +12097,16 @@ Encode("masterpiece",1939);  ==>  [ 14, 10, 22, 29, 6, 27, 19, 18, 6, 12, 8]
 
 My answer:
 ```js
-
+function encode(str,  n){
+  const arr = n.toString().split('')
+  let count = 0
+  
+  return str.split('').map(n => {
+      let num = (n.charCodeAt(0) - 96)+ +arr[count]
+      count++
+      if(count===arr.length) {count = 0}
+    
+      return num
+    })
+}
 ```
