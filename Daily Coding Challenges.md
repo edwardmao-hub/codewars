@@ -12119,4 +12119,4 @@ function encode(str, n) {
 }
 ```
 
-# #### Power
+# Power (8kyu)
