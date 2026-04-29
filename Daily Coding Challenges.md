@@ -12134,5 +12134,12 @@ numberToPower(10, 6) // -> 1000000
 
 My ans:
 ```js
-
+function numberToPower(number, power){
+  let total = 1
+  while(power > 0){
+    total = total * number
+    power--
+  }
+  return total
+}
 ```
