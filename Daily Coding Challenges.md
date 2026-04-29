@@ -12133,3 +12133,5 @@ numberToPower(10, 6) // -> 1000000
 **Note**: `Math.pow` and some other `Math` functions like `eval()` and `**` are disabled.
 
 My ans:
+```js
+```
