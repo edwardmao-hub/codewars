@@ -12144,4 +12144,4 @@ function numberToPower(number, power){
 }
 ```
 
-# 
+# All Inclusive? (7kyu)
