@@ -12172,3 +12172,5 @@ Though not correct in a mathematical sense
 - and for any array `arr`: `contain_all_rots("", arr) --> true`
 
 My ans:
+```js
+```
