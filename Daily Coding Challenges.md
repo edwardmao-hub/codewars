@@ -12173,4 +12173,23 @@ Though not correct in a mathematical sense
 
 My ans:
 ```js
+function containAllRots(str, arr) {
+  if(str==="") return true
+  
+  let rota = new Set()
+  let arrSet = new Set(arr)
+  
+  //create rotations
+  for(let i = 0; i < str.length; i++){
+    rota.add((str+str).slice(i, i + str.length))
+  }
+  
+  //check if rotations are subset of arr
+  for (const rotation of rota) {
+      if (!arrSet.has(rotation)) {
+          return false  // missing rotation from arr
+      }
+  }
+  return true
+}
 ```
