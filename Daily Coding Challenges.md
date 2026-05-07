@@ -12197,7 +12197,7 @@ Time: O(n^2 + m)
 Space: O(n^2 + m * n )
 
 Other ans:
-```
+```js
 function containAllRots(str, arr) {
   for (var i = 0; i < str.length; i++) {
     if (arr.indexOf(str.slice(i) + str.slice(0, i)) === -1) {
