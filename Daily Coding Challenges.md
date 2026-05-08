@@ -12207,5 +12207,9 @@ function containAllRots(str, arr) {
   return true
 }
 ```
+Time: O(m * n^2)
+Space: O(n)
+
+Worse time complexity if array is large, but better space complexity. 
 
 # 
