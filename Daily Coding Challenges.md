@@ -12224,3 +12224,10 @@ Thus, if your function receives `230.00` as input, it should return `200.00`
 - VAT is _always_ `15%` for the purposes of this Kata.
 - Round the result to 2 decimal places.
 - If `null` value given then return `-1`
+
+Ans: 
+```js
+function excludingVatPrice(price){
+  return price===null ? -1 : +(price / 1.15).toFixed(2);
+}
+```
