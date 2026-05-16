@@ -12242,3 +12242,11 @@ Define a method/function that removes from a given array of integers all the val
 * [8, 2, 7, 2, 3, 4, 6, 5, 4, 4, 1, 2, 3], [2, 4, 3] -> [8, 7, 6, 5, 1]
 ```
 
+My ans:
+```js
+Array.prototype.remove_ = function(integer_list, values_list){
+  return integer_list.filter(n => !values_list.includes(n))
+}
+```
+
+# Age Range Compatibility Equation (8kyu)
