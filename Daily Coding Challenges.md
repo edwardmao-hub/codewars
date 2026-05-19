@@ -12272,5 +12272,17 @@ age = 17   =>   "15-20"
 ```
 
 My ans:
-```
+```js
+function datingRange(age){
+  let min, max
+  
+  if(age <= 14){
+    min = age - 0.10 * age
+    max = age + 0.10 * age
+  }else{
+    min = age/2 + 7 
+    max = 2*(age-7)
+  }
+  return `${Math.floor(min)}-${Math.floor(max)}`
+}
 ```
