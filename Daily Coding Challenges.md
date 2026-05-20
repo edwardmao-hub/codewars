@@ -12301,3 +12301,5 @@ function datingRange(age){
   }
 }
 ```
+
+# A Rule of Divisibility by 7 (7kyu)
