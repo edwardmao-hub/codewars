@@ -12365,5 +12365,4 @@ function seven(m) {
   return [val, count]
 }
 
-//102, 1 -> 102 - (1*2) = 100, 10 - (0*2) = 1 
 ```
