@@ -12341,8 +12341,6 @@ function seven(m) {
   const str = m.toString()
   let val = -1
   let count = 0
-  // x − 2y
-  //m = 371 -> 37 − (2×1) -> 37 − 2 = 35
 
 //   while(str.length > 2){
 //     let front = +str.slice(0, str.length - 2)
