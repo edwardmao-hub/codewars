@@ -12338,19 +12338,19 @@ seven(477557101) should return [28, 7]
 My ans:
 ```js
 function seven(m) {
-  const str = m.toString()
-  let val = -1
   let count = 0
-  for(let i = str.length - 1; i > 1; i--){
-    let front = +str.slice(0, i)
-    let back = +str.slice(i)
-    val = front
+  let num = m
+  
+  while(num >= 100){
+    const str = num.toString()
+    const front = +str.slice(0, -1)
+    const last = +str[str.length-1]
+    
+    num = front - (2 * last)
     count++
-    if((front - back*2) % 7 === 0){break}
-      
   }
   
-  return [val, count]
+  return [num, count]
 }
 
 ```
