@@ -12365,3 +12365,5 @@ var i = 0;
 return [m, i];
 }
 ```
+
+# Alphabet symmetry (7kyu)
