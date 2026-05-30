@@ -12379,4 +12379,12 @@ Input will consist of alphabet characters, both uppercase and lowercase. No spac
 
 My ans:
 ```js
+function solve(arr){  
+  return arr.map(n => {
+    return n.split('').reduce((count, c, i) => {
+      if(c.toLowerCase().charCodeAt(0) - 97 === i){count++}
+      return count
+    }, 0)
+  })
+}
 ```
