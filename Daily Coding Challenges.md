@@ -12388,3 +12388,7 @@ function solve(arr){
   })
 }
 ```
+
+Better ans:
+```js
+```
