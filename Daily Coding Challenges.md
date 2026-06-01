@@ -12396,3 +12396,5 @@ function solve(arr){
   return arr.map(x => x.toLowerCase().split('').filter((y,i) => i==alphabeth.indexOf(y)).length);
 };
 ```
+
+# Return Two Highest Values in List (8kyu)
