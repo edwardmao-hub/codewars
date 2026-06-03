@@ -12410,4 +12410,6 @@ Examples:
 []  =>  []
 ```
 
-My ans
+My ans:
+```js
+```
