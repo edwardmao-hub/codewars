@@ -12412,4 +12412,11 @@ Examples:
 
 My ans:
 ```js
+function twoHighest(arr) {
+  if(arr.length===0) return []
+  let noDupes = [...new Set(arr)]
+  noDupes.sort((a, b) => b - a)
+  if(noDupes.length==1) return [noDupes[0]]
+  return [noDupes[0], noDupes[1]]
+}
 ```
