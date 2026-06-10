@@ -12420,3 +12420,4 @@ function twoHighest(arr) {
   return [noDupes[0], noDupes[1]]
 }
 ```
+
