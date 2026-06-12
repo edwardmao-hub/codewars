@@ -12428,4 +12428,4 @@ function twoHighest(arr) {
 }
 ```
 
-# The old switcheroo (7kyu)
+# Basic Calculator (7kyu)
