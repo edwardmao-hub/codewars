@@ -12457,7 +12457,7 @@ function calculate(a, operator, b) {
 ```
 
 Better:
-```
+```js
 function calculate(num1, operation, num2) {
   var ops = {
     '+': function(x, y) { return x + y; },
