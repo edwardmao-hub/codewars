@@ -12468,3 +12468,5 @@ function calculate(num1, operation, num2) {
   return (ops[operation] || function() { return null; })(num1, num2);
 }
 ```
+
+# Is it a number? (8kyu)
