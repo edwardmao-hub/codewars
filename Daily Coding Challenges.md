@@ -12443,3 +12443,15 @@ Write a function called that takes 3 values. The first and third values are numb
 (8,"m", 2) --> null
 (4,"/",0) --> null
 ```
+
+My ans
+```js
+function calculate(a, operator, b) {
+  return operator === "+" ? a + b 
+    : operator === "-" ? a - b
+    : operator === "*" ? a * b
+    : operator === "/" && b === 0 ? null
+    : operator === "/" && b !==0 ? a / b
+    : null
+}
+```
