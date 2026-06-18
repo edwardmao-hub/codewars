@@ -12490,5 +12490,8 @@ isDigit("zero")
 ```
 
 My ans:
-	```js
+```js
+function isDigit(s) {
+  return s == +s
+}
 ```
