@@ -12488,3 +12488,7 @@ isDigit("  3   5")
 isDigit("3 5")
 isDigit("zero")
 ```
+
+My ans:
+	```js
+```
