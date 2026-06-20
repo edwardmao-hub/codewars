@@ -12493,6 +12493,6 @@ My ans:
 ```js
 function isDigit(s) {
   if(s.length===0) return false
-  return s == +s
+  return !isNaN(s.trim())
 }
 ```
