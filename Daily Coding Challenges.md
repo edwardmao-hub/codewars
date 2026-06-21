@@ -12492,7 +12492,6 @@ isDigit("zero")
 My ans:
 ```js
 function isDigit(s) {
-  if(s.length===0) return false
-  return !isNaN(s.trim())
+ return s==parseFloat(s);
 }
 ```
