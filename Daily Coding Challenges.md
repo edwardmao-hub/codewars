@@ -12495,3 +12495,5 @@ function isDigit(s) {
  return s==parseFloat(s);
 }
 ```
+
+# longest_palindrome (6kyu)
