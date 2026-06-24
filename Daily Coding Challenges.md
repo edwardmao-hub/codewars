@@ -12512,3 +12512,4 @@ If the length of the input string is `0`, the return value must be `0`.
 "zzbaabcd" -> 4
 "" -> 0
 ```
+
