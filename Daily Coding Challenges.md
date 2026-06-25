@@ -12513,3 +12513,72 @@ If the length of the input string is `0`, the return value must be `0`.
 "" -> 0
 ```
 
+My ans:
+```js
+function longestPalindrome(s){
+  if(s.length===0) return 0
+	let max = 1
+	for(let i = 0; i < s.length; i++){
+		let odd = expand(s, i, i)
+		let even = expand(s, i, i+1)
+		max = Math.max(max, odd, even)
+	}
+	return max
+}
+function expand(s, left, right){
+	while(left >=0 && right < s.length && s[left]===s[right]){
+		left--
+		right++
+	}
+	return right - left - 1
+}
+```
+Time complexity: O(n^2), Space complexity: O(1)
+
+Better ans using Manacher's Algo:
+```js
+const longestPalindrome = s => {
+  if (!s || s.length < 2) return s.length;
+  
+  // Transform string to handle even length palindromes uniformly
+  // e.g., "aba" -> "^#a#b#a#$"
+  let T = '^#' + s.split('').join('#') + '#$';
+  const n = T.length;
+  const P = new Array(n).fill(0);
+  
+  let center = 0, right = 0;
+  let maxLen = 0, maxCenter = 0;
+  
+  for (let i = 1; i < n - 1; i++) {
+    // Mirror position
+    const mirror = 2 * center - i;
+    
+    // If within right boundary, use previously computed value
+    if (i < right) {
+      P[i] = Math.min(right - i, P[mirror]);
+    }
+    
+    // Expand around center i
+    while (T[i + 1 + P[i]] === T[i - 1 - P[i]]) {
+      P[i]++;
+    }
+    
+    // Update center and right boundary if palindrome expands beyond right
+    if (i + P[i] > right) {
+      center = i;
+      right = i + P[i];
+    }
+    
+    // Track maximum palindrome length
+    if (P[i] > maxLen) {
+      maxLen = P[i];
+      maxCenter = i;
+    }
+  }
+  
+  // Extract original substring
+  const start = (maxCenter - maxLen) / 2;
+  return maxLen;
+};
+```
+Space & Time Complexity: O(n)
