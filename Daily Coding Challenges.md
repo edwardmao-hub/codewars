@@ -12582,3 +12582,5 @@ const longestPalindrome = s => {
 };
 ```
 Space & Time Complexity: O(n)
+
+#### NBA full 48 minutes average 
