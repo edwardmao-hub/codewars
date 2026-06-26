@@ -12583,4 +12583,4 @@ const longestPalindrome = s => {
 ```
 Space & Time Complexity: O(n)
 
-#### NBA full 48 minutes average 
+# NBA full 48 minutes average (8kyu)
