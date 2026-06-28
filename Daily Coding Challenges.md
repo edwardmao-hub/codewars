@@ -12603,3 +12603,10 @@ function pointsPer48(ppg, mpg) {
   return ppg === 0 || mpg === 0 ? 0 : Math.round(48 / mpg * ppg * 10) / 10
 }
 ```
+
+Better ans:
+```js
+function pointsPer48(ppg, mpg) {
+  return +(ppg/mpg*48).toFixed(1)||0
+}
+```
