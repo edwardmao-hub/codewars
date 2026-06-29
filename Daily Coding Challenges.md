@@ -12596,3 +12596,10 @@ pointsPer48(10, 10) // 48
 pointsPer48(5, 17) // 14.1 
 pointsPer48(0, 0) // 0
 ```
+
+My ans:
+```js
+function pointsPer48(ppg, mpg) {
+  return ppg === 0 || mpg === 0 ? 0 : Math.round(48 / mpg * ppg * 10) / 10
+}
+```
