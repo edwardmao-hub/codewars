@@ -12611,4 +12611,4 @@ function pointsPer48(ppg, mpg) {
 }
 ```
 
-#### Squares sequence
+# Squares sequence (7kyu)
