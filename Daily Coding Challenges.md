@@ -12620,3 +12620,5 @@ Complete the function that returns an array of length `n`, starting with the giv
 2, 5  -->  [2, 4, 16, 256, 65536]
 3, 3  -->  [3, 9, 81]
 ```
+
+My ans
