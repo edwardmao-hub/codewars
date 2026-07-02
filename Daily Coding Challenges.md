@@ -12622,3 +12622,9 @@ Complete the function that returns an array of length `n`, starting with the giv
 ```
 
 My ans
+```js
+function squares(x, n) {
+  console.log(2**3, 2**4, 2**5) //8, 16, 32
+  return n <= 0 ? [] : Array.from({length: n}, (e, i) => x**(i+1) )
+}
+```
