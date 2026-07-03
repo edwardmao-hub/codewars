@@ -12621,10 +12621,16 @@ Complete the function that returns an array of length `n`, starting with the giv
 3, 3  -->  [3, 9, 81]
 ```
 
-My ans
+My ans:
 ```js
 function squares(x, n) {
-  console.log(2**3, 2**4, 2**5) //8, 16, 32
-  return n <= 0 ? [] : Array.from({length: n}, (e, i) => x**(i+1) )
+  return n <= 0 ? [] : Array.from({length: n}, (_, i) => x**(2**i) )
+}
+```
+
+Another ans:
+```js
+function squares(x, n) {
+	return Array.from({length: n}, (v, k) => Math.pow(x, Math.pow(2, k)))
 }
 ```
