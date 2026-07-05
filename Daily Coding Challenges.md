@@ -12635,4 +12635,4 @@ function squares(x, n) {
 }
 ```
 
-#### Sum of numbers from 0 to N
+# Sum of numbers from 0 to N (7kyu)
