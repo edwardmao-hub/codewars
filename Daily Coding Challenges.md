@@ -12701,7 +12701,7 @@ var SequenceSum = (function() {
 })();
 ```
 
-More succint:
+More succinct:
 ```js
 const SequenceSum = {
   showSequence: val => val < 0 ? `${val}<0` :
