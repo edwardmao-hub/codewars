@@ -12745,3 +12745,10 @@ console.log(1, isNaN(+n), +m, isNaN(+m)) // 1, false, NaN, true
 true = letters, false = only numbers
 */
 ```
+
+Ans regex:
+```
+function validatePIN(pin) {
+  return /^(\d{4}|\d{6})$/.test(pin)
+}
+```
