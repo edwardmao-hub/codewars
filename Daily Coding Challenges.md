@@ -12700,3 +12700,11 @@ var SequenceSum = (function() {
 
 })();
 ```
+
+More succint:
+```js
+const SequenceSum = {
+  showSequence: val => val < 0 ? `${val}<0` :
+    [...Array(val + 1).keys()].join(`+`) + (val ? ` = ` : `=`) + val * (++val) / 2
+};
+```
