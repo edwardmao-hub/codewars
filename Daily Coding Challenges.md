@@ -12669,3 +12669,34 @@ We want to generate a function that computes the series starting from 0 and endi
 **Output:**
 
 > 0=0
+
+My ans:
+```js
+var SequenceSum = (function() {
+  function SequenceSum() {}
+
+  SequenceSum.showSequence = function(count) {
+    let str = ""
+    if(count === 0){
+      return str = "0=0"
+    }else if(count < 0){
+      return str = `${count}<0`
+    }else{
+      let total = 0
+      for(let i = 0; i <= count; i++){
+        total += i
+        if(i===count){
+          str += `${i} = ${total}`
+        }else{
+          str += `${i}+`
+        }
+      }
+    }
+    
+    return str
+  };
+
+  return SequenceSum;
+
+})();
+```
