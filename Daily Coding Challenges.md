@@ -12747,7 +12747,7 @@ true = letters, false = only numbers
 ```
 
 Ans regex:
-```
+```js
 function validatePIN(pin) {
   return /^(\d{4}|\d{6})$/.test(pin)
 }
