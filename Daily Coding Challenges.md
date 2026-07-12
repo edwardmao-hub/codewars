@@ -12753,4 +12753,4 @@ function validatePIN(pin) {
 }
 ```
 
-#### Classy Extensions
+# Classy Extensions (8kyu)
