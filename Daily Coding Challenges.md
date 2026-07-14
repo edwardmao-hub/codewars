@@ -12759,3 +12759,5 @@ Your task is to complete the `Cat` class which extends `Animal` and replace the 
 The name attribute is accessible in the class with `this.name`.
 
 My ans:
+```js
+```
