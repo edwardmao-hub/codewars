@@ -12708,3 +12708,40 @@ const SequenceSum = {
     [...Array(val + 1).keys()].join(`+`) + (val ? ` = ` : `=`) + val * (++val) / 2
 };
 ```
+
+# Validate a PIN code (7kyu)
+ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but **exactly** 4 digits or exactly 6 digits.
+
+If the function is passed a valid PIN string, return `true`, else return `false`.
+
+## Examples (**Input --> Output)**
+
+```
+"1234"   -->  true
+"12345"  -->  false
+"a234"   -->  false
+```
+
+My ans:
+```js
+  function validatePIN (pin) {
+    const whitespace = pin !== pin.trim()
+    const notFourSix = pin.length!==4 && pin.length !== 6
+    const noLetters = pin.split('').some(n => isNaN(+n))
+    console.log(pin, "length:",pin.length, notFourSix, noLetters)
+    return whitespace ? false
+            : notFourSix ? false 
+              : noLetters ? false : true
+  }
+
+/*
+1234 -> .split('') = [1,2,3,4]  
+[1,2,3,4] -> .some(n => isNaN(+n))
+
+let n = "1", m = "a"
+console.log(1, isNaN(+n), +m, isNaN(+m)) // 1, false, NaN, true
+"a" converted into a number = NaN
+"1" converted into a number != NaN
+true = letters, false = only numbers
+*/
+```
