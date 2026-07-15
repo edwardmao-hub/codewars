@@ -12769,3 +12769,12 @@ class Cat extends Animal {
   }
 }
 ```
+
+Better:
+```
+class Cat extends Animal {
+  speak() {
+    return `${this.name} meows.`;
+  }
+}
+```
