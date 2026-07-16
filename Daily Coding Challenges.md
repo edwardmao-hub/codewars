@@ -12771,7 +12771,7 @@ class Cat extends Animal {
 ```
 
 Better:
-```
+```js
 class Cat extends Animal {
   speak() {
     return `${this.name} meows.`;
