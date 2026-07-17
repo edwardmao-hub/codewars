@@ -12778,3 +12778,5 @@ class Cat extends Animal {
   }
 }
 ```
+
+# Training JS #5: Basic data types--Object (8kyu)
