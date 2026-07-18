@@ -12780,3 +12780,14 @@ class Cat extends Animal {
 ```
 
 # Training JS #5: Basic data types--Object (8kyu)
+Given function `animal`, accept 1 parameter:`obj` like this:
+
+```javascript
+{name:"dog",legs:4,color:"white"}
+```
+
+and return a string like this:
+
+```javascript
+"This white dog has 4 legs."
+```
