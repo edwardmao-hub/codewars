@@ -12791,3 +12791,5 @@ and return a string like this:
 ```javascript
 "This white dog has 4 legs."
 ```
+
+My ans:
