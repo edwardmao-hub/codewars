@@ -12760,4 +12760,12 @@ The name attribute is accessible in the class with `this.name`.
 
 My ans:
 ```js
+class Cat extends Animal {
+  constructor(animal){
+    super(animal)
+  }
+  speak(){
+    return `${this.name} meows.`
+  }
+}
 ```
