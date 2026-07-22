@@ -12793,3 +12793,9 @@ and return a string like this:
 ```
 
 My ans:
+```
+function animal(obj){
+  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+}
+
+```
