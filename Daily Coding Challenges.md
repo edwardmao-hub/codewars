@@ -12806,4 +12806,9 @@ All inputs will be valid.
 
 My ans:
 ```js
+function digits(n) {
+  return n.toString().length
+}
 ```
+
+#### Basic Sequence Practice
