@@ -12811,4 +12811,4 @@ function digits(n) {
 }
 ```
 
-#### Basic Sequence Practice
+# Basic Sequence Practice (7kyu)
