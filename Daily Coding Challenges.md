@@ -12821,3 +12821,5 @@ Complete the function that takes an integer `n` and returns a list/array of leng
 -5  -->  [0, -1, -3, -6, -10, -15]
  7  -->  [0,  1,  3,  6,  10,  15,  21,  28]
 ```
+
+My ans:
