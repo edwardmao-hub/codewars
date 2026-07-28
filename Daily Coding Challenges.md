@@ -12823,3 +12823,24 @@ Complete the function that takes an integer `n` and returns a list/array of leng
 ```
 
 My ans:
+```js
+function sumOfN(n) {
+  let arr = []
+  let negativeFlag = false
+  if(n < 0){
+    negativeFlag = true
+    n = n * -1
+  }
+  
+  for(let i = 0; i <= n; i++){
+    if(i === 0){
+      arr.push(0)
+    }else{
+      let val = i + Math.abs(arr[i-1])
+      negativeFlag ? arr.push(val * -1) : arr.push(val)
+    }
+  }
+  
+  return arr
+}
+```
