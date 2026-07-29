@@ -12844,3 +12844,9 @@ function sumOfN(n) {
   return arr
 }
 ```
+
+Better ans:
+```js
+const sumOfN = n =>
+  [...Array(Math.abs(n))].reduce((pre, _, idx) => [...pre, pre[idx] + Math.sign(n) * ++idx], [0]);
+```
