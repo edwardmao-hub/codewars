@@ -12850,3 +12850,4 @@ Better ans:
 const sumOfN = n =>
   [...Array(Math.abs(n))].reduce((pre, _, idx) => [...pre, pre[idx] + Math.sign(n) * ++idx], [0]);
 ```
+#### Find Count of Most Frequent Item in an Array
