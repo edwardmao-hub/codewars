@@ -12862,3 +12862,25 @@ ouptut: 5
 ```
 
 The most frequent number in the array is `-1` and it occurs `5` times.
+
+My ans:
+```
+function mostFrequentItemCount(collection) {
+  let obj = {}
+  let mostFrequent = 0
+  
+  collection.forEach(n => {
+    if(obj[n] === undefined){
+      obj[n] = 1
+    }else{
+      obj[n]++
+    }
+  })
+  
+  for(const [_,value] of Object.entries(obj)){
+    mostFrequent = Math.max(mostFrequent, value)
+  }
+  
+  return mostFrequent
+}
+```
