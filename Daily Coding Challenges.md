@@ -12864,7 +12864,7 @@ ouptut: 5
 The most frequent number in the array is `-1` and it occurs `5` times.
 
 My ans:
-```
+```js
 function mostFrequentItemCount(collection) {
   let obj = {}
   let mostFrequent = 0
