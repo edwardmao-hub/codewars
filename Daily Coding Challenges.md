@@ -12885,3 +12885,8 @@ function mostFrequentItemCount(collection) {
 }
 ```
 
+Better:
+```js
+const mostFrequentItemCount = collection =>
+  collection.length ? Math.max(...[...new Set(collection)].map(val => collection.filter(v => v === val).length)) : 0;
+```
