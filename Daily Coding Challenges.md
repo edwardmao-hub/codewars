@@ -12899,3 +12899,8 @@ In the society he lived in, people - women in particular - had to repress their 
 Now, basically, when a person hears about Freud, s/he hears _"sex"_ because for Freud, everything was related to, and explained by sex.
 
 In this kata, the function will take a string as its argument, and return a string with every word replaced by the explanation to everything, according to Freud. Note that an empty string, or no arguments, should return an empty string.
+
+My ans
+```js
+
+```
