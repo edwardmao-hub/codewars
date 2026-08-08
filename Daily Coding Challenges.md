@@ -12902,5 +12902,7 @@ In this kata, the function will take a string as its argument, and return a stri
 
 My ans
 ```js
-
+function toFreud(string) {
+  return string.length === 0 ? "" : string.split(' ').map(n => "sex").join(' ')
+}
 ```
