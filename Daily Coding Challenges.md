@@ -12918,3 +12918,5 @@ function add(a, b){
   return a == b
 }
 ```
+
+#### Difference Of Squares
