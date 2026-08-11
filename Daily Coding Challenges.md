@@ -12919,4 +12919,4 @@ function add(a, b){
 }
 ```
 
-#### Difference Of Squares
+# Difference Of Squares (7kyu)
