@@ -12943,4 +12943,13 @@ Hence the difference between square of the sum of the first ten natural numbers 
 
 My ans:
 ```js
+function differenceOfSquares(n) {
+  let sqSum = 0, sumSq = 0, total = 0
+  for(let i = n; i>0; i--){
+    sumSq += i**2
+    total += i
+  }
+  sqSum = total **2
+  return Math.abs(sumSq - sqSum)
+}
 ```
