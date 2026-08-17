@@ -12955,7 +12955,7 @@ function differenceOfSquares(n) {
 ```
 
 Better ans:
-```
+```js
 const differenceOfSquares = n =>
   (n - 1) * n * (n + 1) * (3 * n + 2) / 12;
 ```
