@@ -13005,5 +13005,30 @@ orderedCount("abracadabra") == [['a', 5], ['b', 2], ['r', 2], ['c', 1], ['d', 1]
 
 My ans:
 ```js
+const orderedCount = function (text) {
+  let list = []
+  
+  for(let i = 0; i < text.length; i++){
+    let found = false
+    
+    for(let j = 0; j < list.length; j++){
+      if(list[j][0] === text[i]){
+        found = true
+        list[j][1]++
+        break
+      }
+    }
+    
+    if(!found){
+      list.push([text[i], 1])
+    }
+  }
+  
+  return list
+}
+
+//check if letter is in list
+//if it is, add and go next
+//if it isnt, push
 
 ```
