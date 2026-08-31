@@ -13026,9 +13026,4 @@ const orderedCount = function (text) {
   
   return list
 }
-
-//check if letter is in list
-//if it is, add and go next
-//if it isnt, push
-
 ```
