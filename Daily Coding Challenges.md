@@ -13029,7 +13029,7 @@ const orderedCount = function (text) {
 ```
 
 better ans:
-```
+```js
 const orderedCount = text =>
   [...new Set(text)].map(val => [val, text.split(val).length - 1])
 ```
