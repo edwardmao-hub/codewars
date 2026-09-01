@@ -13027,3 +13027,9 @@ const orderedCount = function (text) {
   return list
 }
 ```
+
+better ans:
+```
+const orderedCount = text =>
+  [...new Set(text)].map(val => [val, text.split(val).length - 1])
+```
