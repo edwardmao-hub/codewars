@@ -13034,4 +13034,4 @@ const orderedCount = text =>
   [...new Set(text)].map(val => [val, text.split(val).length - 1])
 ```
 
-#### Take an Arrow to the knee, Functionally
+# Take an Arrow to the knee, Functionally (8kyu)
