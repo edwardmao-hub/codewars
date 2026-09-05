@@ -13066,3 +13066,5 @@ YoMama -> [1,2,4,6]
 
 - Vowels in this context refers to: a e i o u y (including upper case)
 - This is indexed from `[1..n]` (**not zero indexed!**)
+
+My ans:
