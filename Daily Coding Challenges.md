@@ -13048,3 +13048,5 @@ Better ans:
 ```js
 const ArrowFunc = (arr) => String.fromCharCode(...arr);
 ```
+
+#### Find the vowels
