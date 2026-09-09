@@ -13069,4 +13069,12 @@ YoMama -> [1,2,4,6]
 
 My ans:
 ```js
+function vowelIndices(word){
+  const vowelArr = []
+  word.split('').forEach((c,i) => {
+    if('aeiouyAEIOUY'.includes(c)) vowelArr.push(i+1)
+  })
+  
+  return vowelArr
+}
 ```
