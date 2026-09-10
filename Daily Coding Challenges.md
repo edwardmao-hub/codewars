@@ -13078,3 +13078,11 @@ function vowelIndices(word){
   return vowelArr
 }
 ```
+
+Better:
+```js
+const vowelIndices = word =>
+  [...word].reduce((pre, val, idx) => /[aeiouy]/i.test(val) ? [...pre, ++idx] : pre, []);
+```
+
+#### Folding your way to the moon
