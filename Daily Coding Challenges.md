@@ -13085,4 +13085,4 @@ const vowelIndices = word =>
   [...word].reduce((pre, val, idx) => /[aeiouy]/i.test(val) ? [...pre, ++idx] : pre, []);
 ```
 
-# Folding your way to the moon 
+# Folding your way to the moon (7kyu)
