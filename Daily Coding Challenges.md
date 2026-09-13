@@ -13089,3 +13089,5 @@ const vowelIndices = word =>
 You know that a piece of paper has a thickness of `0.0001m`. Given `distance` in units of meters, calculate how many times you have to fold the paper to make the paper reach this distance.
 
 My ans
+```js
+```
