@@ -13091,6 +13091,16 @@ You know that a piece of paper has a thickness of `0.0001m`. Given `distance` in
 My ans
 ```js
 function foldTo(distance) {
+  let count = 0 
+  const thickness = 0.0001
+  let fold = thickness
   
+  while(fold < distance){
+    fold = fold * 2
+    count++
+  }
+  
+  return distance < 0 ? null  
+    : distance === 0 ? 0 : count
 }
 ```
