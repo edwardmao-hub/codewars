@@ -13088,7 +13088,7 @@ const vowelIndices = word =>
 # Folding your way to the moon (7kyu)
 You know that a piece of paper has a thickness of `0.0001m`. Given `distance` in units of meters, calculate how many times you have to fold the paper to make the paper reach this distance.
 
-My ans
+My ans:
 ```js
 function foldTo(distance) {
   let count = 0 
@@ -13103,4 +13103,10 @@ function foldTo(distance) {
   return distance < 0 ? null  
     : distance === 0 ? 0 : count
 }
+```
+
+Better: 
+```
+const foldTo = distance =>
+  distance < 0 ? null : Math.max(Math.ceil(Math.log2(distance / 0.0001)), 0);
 ```
