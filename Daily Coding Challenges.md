@@ -13106,7 +13106,7 @@ function foldTo(distance) {
 ```
 
 Better: 
-```
+```js
 const foldTo = distance =>
   distance < 0 ? null : Math.max(Math.ceil(Math.log2(distance / 0.0001)), 0);
 ```
