@@ -13122,4 +13122,9 @@ Since Nessie is a master of disguise, the only way accurately tell is to look fo
 
 My ans:
 ```js
+function isLochNessMonster(s) {
+  return s.includes("tree fiddy") || s.includes("3.50") || s.includes("three fifty")
+}
 ```
+
+#### Logical calculator
