@@ -13127,4 +13127,4 @@ function isLochNessMonster(s) {
 }
 ```
 
-#### Logical calculator
+# Logical calculator (8kyu)
