@@ -13130,3 +13130,6 @@ function isLochNessMonster(s) {
 # Logical calculator (8kyu)
 ## Your Task
 Given an array of Boolean values and a logical operator, return a Boolean result based on sequentially applying the operator to the values in the array.
+
+```
+```
