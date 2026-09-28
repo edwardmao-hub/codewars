@@ -13142,3 +13142,10 @@ function logicalCalc(array, op){
   return array.reduce(operators[op])
 }
 ```
+Better:
+```
+const logicalCalc = (array, op) =>
+  op === `AND` ? array.every(Boolean) :
+    op === `OR` ? array.some(Boolean) :
+      !!(array.filter(Boolean).length & 1);
+```
