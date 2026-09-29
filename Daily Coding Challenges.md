@@ -13143,7 +13143,7 @@ function logicalCalc(array, op){
 }
 ```
 Better:
-```
+```js
 const logicalCalc = (array, op) =>
   op === `AND` ? array.every(Boolean) :
     op === `OR` ? array.some(Boolean) :
