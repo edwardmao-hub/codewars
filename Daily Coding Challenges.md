@@ -13149,3 +13149,5 @@ const logicalCalc = (array, op) =>
     op === `OR` ? array.some(Boolean) :
       !!(array.filter(Boolean).length & 1);
 ```
+
+#### Fuel Calculator: Total Cost 
