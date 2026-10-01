@@ -13132,4 +13132,13 @@ function isLochNessMonster(s) {
 Given an array of Boolean values and a logical operator, return a Boolean result based on sequentially applying the operator to the values in the array.
 
 ```js
+function logicalCalc(array, op){
+  const operators = {
+    AND: (a, b) => a && b,
+    OR:  (a, b) => a || b,
+    XOR: (a, b) => a !== b,
+  }
+  
+  return array.reduce(operators[op])
+}
 ```
