@@ -13150,4 +13150,4 @@ const logicalCalc = (array, op) =>
       !!(array.filter(Boolean).length & 1);
 ```
 
-#### Fuel Calculator: Total Cost 
+# Fuel Calculator: Total Cost (8kyu)
