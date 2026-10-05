@@ -13155,5 +13155,9 @@ Purchases of 2 or more litres get a discount of 5 cents per litre, purchases of 
 
 My ans:
 ```js
-
+function fuelPrice(litres, pricePerLitre) {
+  let discount = Math.floor(litres / 2) * 0.05
+  if(discount>.25){ discount = .25}
+  return +(litres*pricePerLitre - litres*discount).toFixed(2)
+}
 ```
