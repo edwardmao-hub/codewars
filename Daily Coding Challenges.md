@@ -13161,4 +13161,3 @@ function fuelPrice(litres, pricePerLitre) {
   return +(litres*pricePerLitre - litres*discount).toFixed(2)
 }
 ```
-
