@@ -13161,3 +13161,5 @@ function fuelPrice(litres, pricePerLitre) {
   return +(litres*pricePerLitre - litres*discount).toFixed(2)
 }
 ```
+
+#### Linked Lists - Length & Count
