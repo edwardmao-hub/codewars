@@ -13162,4 +13162,4 @@ function fuelPrice(litres, pricePerLitre) {
 }
 ```
 
-#### Linked Lists - Length & Count
+# Linked Lists - Length & Count (6kyu)
