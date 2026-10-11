@@ -13182,4 +13182,4 @@ I've decided to bundle these two functions within the same Kata since they are b
 
 The `push()`/`Push()` and `buildOneTwoThree()`/`BuildOneTwoThree()` functions do not need to be redefined.
 
-Ans: 
+Ans:
