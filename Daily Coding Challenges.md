@@ -13213,7 +13213,7 @@ function count(head, data) {
 ```
 
 Recursive ans
-```
+```js
 function Node(data) {
   this.data = data
   this.next = null
