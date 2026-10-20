@@ -13230,3 +13230,13 @@ function count(head, data) {
 ```
 "a recursive approach for this kata is best when tail-call optimized."
 "If you are doing some operation like multiplication or addition with the return from the recursive call, you create a much less efficient recursive function than if you use an accumulator and return the result of the recursion by itself. More information and a better explanation here: [https://stackoverflow.com/questions/310974/what-is-tail-call-optimization](https://stackoverflow.com/questions/310974/what-is-tail-call-optimization)"
+
+# Sort arrays - 1 (7kyu)
+Just a simple sorting usage. Create a function that returns the elements of the input-array / list sorted in lexicographical order.
+
+My ans:
+```js
+sortme = function( names ){
+  return names.sort()
+}
+```
