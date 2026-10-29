@@ -13254,4 +13254,50 @@ DiscoverOriginalPrice(75, 25) => 100.00M where 75 is the sale price (discounted 
 
 My ans:
 ```js
+function discoverOriginalPrice(discountedPrice, salePercentage){
+  return +(discountedPrice / (1 - (salePercentage / 100))).toFixed(2)
+}
+```
+
+#### Regexp Basics - is it a digit? (8kyu)
+Implement a function that returns `true` when a given string only contains a single digit (0-9), `false` otherwise.
+
+My ans:
+```js
+String.prototype.digit = function() {
+  if(this.length !== 1) return false
+  return this >= '0' && this <= '9' ? true : false
+};
+```
+First instinct was to use number coercion and compare that way, but found that ' ' coerced to a number results in 0, which is found to equate 0 -> wrong. Therefore we use string comparisons. This works because digits are contiguous in ASCII so single chars can be compared to strings. 
+
+More clean version:
+```js
+String.prototype.digit = function() {
+  return this.length === 1 && '0' <= this && this <= '9';
+};
+```
+
+#### Build a square (7kyu)
+I will give you an integer. Give me back a shape that is as long and wide as the integer. The integer will be a whole number between 1 and 50.
+
+### Example
+
+`n = 3`, so I expect a 3x3 square back just like below as a string:
+
+```
++++
++++
++++
+```
+
+My ans:
+```js
+function generateShape(integer){
+  const shape = []
+  for(let i = 0; i < integer; i++){
+    shape.push("+".repeat(integer))
+  }
+  return shape.join("\n")
+}
 ```
