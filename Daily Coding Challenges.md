@@ -13259,7 +13259,7 @@ function discoverOriginalPrice(discountedPrice, salePercentage){
 }
 ```
 
-#### Regexp Basics - is it a digit? (8kyu)
+# Regexp Basics - is it a digit? (8kyu)
 Implement a function that returns `true` when a given string only contains a single digit (0-9), `false` otherwise.
 
 My ans:
@@ -13278,7 +13278,7 @@ String.prototype.digit = function() {
 };
 ```
 
-#### Build a square (7kyu)
+# Build a square (7kyu)
 I will give you an integer. Give me back a shape that is as long and wide as the integer. The integer will be a whole number between 1 and 50.
 
 ### Example
@@ -13299,5 +13299,12 @@ function generateShape(integer){
     shape.push("+".repeat(integer))
   }
   return shape.join("\n")
+}
+```
+
+Better ans:
+```js
+function generateShape(n){
+  return ("+".repeat(n)+"\n").repeat(n).trim()
 }
 ```
