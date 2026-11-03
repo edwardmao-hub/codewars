@@ -13352,3 +13352,5 @@ function decode(str) {
   return [...str].map(c => dict[c] || c).join('')
 }
 ```
+
+Better ans:
