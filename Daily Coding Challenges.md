@@ -13330,4 +13330,25 @@ For the sake of simplicity, you can assume that any numbers passed into the func
 
 My ans:
 ```js
+function encode(str) {
+  const dict = {
+    'a': '1',
+    'e': '2',
+    'i': '3',
+    'o': '4',
+    'u': '5'
+    }
+  return [...str].map(c => dict[c] || c).join('')
+}
+
+function decode(str) {
+  const dict = {
+    '1': 'a',
+    '2': 'e',
+    '3': 'i',
+    '4': 'o',
+    '5': 'u'
+  }
+  return [...str].map(c => dict[c] || c).join('')
+}
 ```
