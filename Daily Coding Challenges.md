@@ -13365,3 +13365,5 @@ function decode(string){
   return string.replace(/[1-5]/g, function (x) { return '_aeiou'.charAt(x) });
 }
 ```
+
+# All Star Code Challenge #22
