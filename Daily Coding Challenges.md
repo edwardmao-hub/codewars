@@ -13354,7 +13354,7 @@ function decode(str) {
 ```
 
 Better ans:
-```
+```js
 // turn vowels into numbers
 function encode(string){
   return string.replace(/[aeiou]/g, function (x) { return '_aeiou'.indexOf(x) });
