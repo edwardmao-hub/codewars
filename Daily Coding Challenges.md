@@ -13383,4 +13383,15 @@ For example:
 323500 --> "89 hour(s) and 51 minute(s)"
 ```
 
-My ans: 
+My ans:
+```js
+function toTime(seconds) {
+  let [hrs, mins] = (seconds/3600).toString().split('.')
+  
+  if(hrs===undefined) hrs = 0
+  mins === undefined ? mins = 0 : mins = Math.floor(60 * (mins.slice(0,2)/100))
+
+  return `${hrs} hour(s) and ${mins} minute(s)`
+}
+
+```
