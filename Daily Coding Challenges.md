@@ -13309,7 +13309,7 @@ function generateShape(n){
 }
 ```
 
-#### The Vowel Code (6kyu)
+# The Vowel Code (6kyu)
 **Step 1:** Create a function called `encode()` to replace all the lowercase vowels in a given string with numbers according to the following pattern:
 
 ```
@@ -13366,7 +13366,7 @@ function decode(string){
 }
 ```
 
-# All Star Code Challenge #22
+# All Star Code Challenge #22 (7kyu)
 Create a function that takes an integer argument of seconds and converts the value into a string describing how many hours and minutes comprise that many seconds.
 
 Any remaining seconds left over are ignored.
