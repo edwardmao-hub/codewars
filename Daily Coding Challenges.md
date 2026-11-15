@@ -13414,7 +13414,6 @@ For each word:
 - there are no leading or trailing spaces
 
 Examples
-
 ```
 '72olle 103doo 100ya' --> 'Hello good day'
 '82yade 115te 103o'   --> 'Ready set go'
