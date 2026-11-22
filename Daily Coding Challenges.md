@@ -13419,6 +13419,14 @@ Examples
 '82yade 115te 103o'   --> 'Ready set go'
 ```
 
-My ans
+Ans
 ```js
+function decipherThis(str) {
+  return str.split(" ")
+    .map(w =>
+      w.replace(/^\d+/, c => String.fromCharCode(c))
+       .replace(/^(.)(.)(.*)(.)$/, "$1$4$3$2")
+    )
+    .join(" ")
+}
 ```
