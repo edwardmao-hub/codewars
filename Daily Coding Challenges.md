@@ -13430,3 +13430,9 @@ function decipherThis(str) {
     .join(" ")
 }
 ```
+
+Another ans:
+```
+const decipherThis = str =>
+  str.replace(/\b(\d+)(\w?)(\w*?)(\w?)\b/g, (_, $1, $2, $3, $4) => String.fromCharCode($1) + $4 + $3 + $2);
+```
