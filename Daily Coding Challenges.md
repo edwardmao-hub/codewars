@@ -13436,3 +13436,22 @@ Another ans:
 const decipherThis = str =>
   str.replace(/\b(\d+)(\w?)(\w*?)(\w?)\b/g, (_, $1, $2, $3, $4) => String.fromCharCode($1) + $4 + $3 + $2);
 ```
+
+# Looking for a benefactor (7kyu)
+## Task
+
+The function should return the expected donation (rounded up to the next integer) that will permit to reach the average.
+
+Should the last donation be a non positive number `(<= 0)` John wants us either to throw an error or return such value so he will clearly see that his expectations are not great enough.
+
+_In "Sample Tests" you can see what to return._
+
+### Notes:
+
+- all donations and new average are numbers (integers or floats), array of donations can be empty.
+- See examples below and "Sample Tests" to see which return is to be done.
+
+```
+array: [14, 30, 5, 7, 9, 11, 15], new average: 92 -> result: 645
+array: [14, 30, 5, 7, 9, 11, 15], new average: 2  -> result: variable, see "Sample Tests" 
+```
