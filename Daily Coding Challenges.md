@@ -13455,3 +13455,5 @@ _In "Sample Tests" you can see what to return._
 array: [14, 30, 5, 7, 9, 11, 15], new average: 92 -> result: 645
 array: [14, 30, 5, 7, 9, 11, 15], new average: 2  -> result: variable, see "Sample Tests" 
 ```
+
+Ans:
