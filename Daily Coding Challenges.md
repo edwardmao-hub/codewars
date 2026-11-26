@@ -13457,3 +13457,5 @@ array: [14, 30, 5, 7, 9, 11, 15], new average: 2  -> result: variable, see "Samp
 ```
 
 Ans:
+```
+```
