@@ -13457,5 +13457,11 @@ array: [14, 30, 5, 7, 9, 11, 15], new average: 2  -> result: variable, see "Samp
 ```
 
 Ans:
-```
+```js
+function newAvg(arr, newavg) {
+  if(arr.length===0){ return newavg }
+  let nextDonation = newavg*(arr.length+1) - arr.reduce((total, n) => total += n )
+  if(nextDonation <= 0){ throw new Error("Expected New Average is too low") }
+  return Math.ceil(nextDonation)
+}
 ```
